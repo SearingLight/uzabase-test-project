@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #必要モジュールをインポート
 import feedparser
 
@@ -8,10 +9,10 @@ feed3 = feedparser.parse('https://www.panic.com/blog/feed/')
 
 #内容を表示
 for post in feed.entries:
-	print post.title[:10].encode("utf-8") + ": " + post.description[:30].encode("utf-8") + ""
+	print(post.title[:10] + ": " + post.description[:30] + "")
 	
 for post in feed2.entries:
-	print post.title[:10].encode("utf-8") + ": " + post.description[:30].encode("utf-8") + ""
+	print(post.title[:10] + ": " + post.description[:30] + "")
 	
 for post in feed3.entries:
-	print post.title[:10].encode("utf-8") + ": " + post.description[:30].encode("utf-8") + ""
+	print(post.title[:10] + ": " + post.description[:30] + "")
